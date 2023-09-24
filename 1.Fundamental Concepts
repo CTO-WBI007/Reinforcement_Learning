@@ -1,1 +1,11 @@
 //1.概率论知识：随机变量，概率密度函数，随机抽样
+
+Hint:there is a lot of terminologies in this course, so if u want to learn the course well, understand those jargons. Let's get started;
+
+//2. 1) state : this frame 2)action 3)agent 4)policy : a kind of function,according to the state, make decision. It is the probability of taking action A = a given a certain state s;
+action A can be random  5)reward : the definition of reward is crucial. 6)state transition : can be certain or random, usually it is deemed as random. Randomness is from the environment.
+7)agent environment interaction : state -> agent -> env -> reward;
+State transitions and actions both have randomness.
+
+8)return(aka cumulative future reward) : future reward has less weight than present reawrd;
+9)discounted return: pol;
