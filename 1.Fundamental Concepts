@@ -19,9 +19,9 @@ State transitions and actions both have randomness.
 10)value functions Q:action value function for policy PI / optimal action-value funtion Q* = max(PI) Q / state value function V(PI);
 if actions are discrete, use sigma; if continuous, use calculus
 
-*for a certain policy PI，value function Q(s,a) evaluates how good it is for an agent to pick action a while being in state s;
+*for a certain policy PI，action-value function Q(s,a) evaluates how good it is for an agent to pick action a while being in state s;
 
-*for a fixed policy PI，value function V(s) evaluates how good the situation is in state s;
+*for a fixed policy PI，state-value function V(s) evaluates how good the situation is in state s;
 
 
 
