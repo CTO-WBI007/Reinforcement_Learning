@@ -1,0 +1,15 @@
+Chapter 2.Value-Based reinforcement learning
+
+1) DQN (deep Q network) : use a neural link network to approximate the Q* function, a prediction to future occurence
+
+construction of DQN : state -> conv -> feature vector -> dense -> Q* function //hence we can use DQN to play game
+
+but how to train DQN? we use TD algorithm
+
+2) Temporal Difference Learning (TDL) : 
+procedure : 1. make a prediction q = Q(w);
+2.get the target y;
+3.Loss L = 1/2 * (q - y) ^ 2;
+4.gradient : L对w求偏导
+5.gradient descend;
+
