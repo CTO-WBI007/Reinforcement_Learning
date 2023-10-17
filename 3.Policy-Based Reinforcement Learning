@@ -1,0 +1,11 @@
+Review: Policy function approximation:
+func: pai(a|s), state s is an input
+
+Policy network: pai(a|s,theta);Use a neural net to approximate pai(a|s);
+theta: trainable parameters of the neural net.
+
+Sum of pai(a|s,theta) = 1. Because this is a probability dense function.
+
+Definition:Approximate state - value function:
+V(s;theta) = sum of pai(a|s;theta) * Q(s,a).
+Policy based learing: **learn that maximizes J(theta) = Es[V(s;theta)];**
