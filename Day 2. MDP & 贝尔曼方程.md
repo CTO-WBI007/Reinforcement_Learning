@@ -91,7 +91,12 @@ $q_{\pi}(s,a) = E_{\pi} [G_{t}|S_{t} = s, A_{t} = a]$
 $V_{max}(s) = \max_{\pi}V_{\pi}(s)$  
 $q_{max}(s,a) = \max_{\pi}q_{\pi}(s,a)$  
 
-*Conclusion* : $V_{max}(s) = \max_{a} q_{max}(s,a)$
+*Conclusion 1* : $V_{max}(s) = \max_{a} q_{max}(s,a)$  
+*Conclusion 2* : $q_{\pi}(s,a) = \sum_{{r,s'}} p(s', r|s, a) [r+\gamma V_{max}(s')]$  
+*Conclusion 3* : $V_{max}(s) = \max_{a}\sum_{{r,s'}} p(s', r|s, a) [r+\gamma V_{max}(s')]$  
+*Conclusion 4* : $q_{max}(s,a) = \sum_{{r,s'}} p(s', r|s, a) [r+\gamma\max_{a'}q_{max}(s',a')]$  
+
+*Conclusion 3,4 are what we called Bellman Optimality Equation*
 
 
 
