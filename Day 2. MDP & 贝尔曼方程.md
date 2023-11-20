@@ -11,4 +11,4 @@
 
 *S* ： state set   
 *A* ：action set， $$\\forall s \\in S$$;   
-A(s)$$\\Rightarrow$$At
+$$A(s) \\Rightarrow At$$
