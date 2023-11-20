@@ -39,7 +39,15 @@ p(s' | s, a) = $\sum$ p(s', r | s, a)
 
 ## Reward:  
 $G_{t}$ = $R_{t+1}$ + $r^{2}R_{t+1}$ + ... + $r^{r-1}R_{r}$  
-${r\in [0,1]}$  
+${r\in [0,1]}$
+
+## **Value Function**:  
+
+$V_{\pi} = E_{\pi} [G_{t}|S_{t} = s]$  
+
+*We will use backtracking graph to calculate value function*  
+
+
 
 
 
