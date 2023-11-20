@@ -26,7 +26,7 @@
 
 *P* : p(s', r | s, a) == Pr{St+1 = s', Rt+1 = r | St = s, At = a}  
 状态转移函数：  
-p(s' | s, a) = $$\sum$$p(s', r | s, a)  
+p(s' | s, a) = $\sum$p(s', r | s, a)  
 
 
 
