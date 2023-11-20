@@ -12,3 +12,12 @@
 *S* ：state set  
 *A* ：action set $\forall s \in S$, $A(s) \longrightarrow At$  
 *R* : reward set $\longrightarrow Rt, Rt+1$
+
+
+# MDP 2 Dynamic Property of MDP
+
+## Definitions:
+
+### (1)MC  
+(2)MRP  
+(3)MDP
