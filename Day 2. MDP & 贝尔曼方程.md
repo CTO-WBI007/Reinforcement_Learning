@@ -69,7 +69,9 @@ $q_{\pi}(s,a) = E_{\pi} [G_{t}|S_{t} = s, A_{t} = a]$
 $V_{\pi}$(s) ? $q_{\pi}$(s,a)  
 $\pi(a1|s) * q_{\pi}(s,a1)$ + $\pi(a2|s) * q_{\pi}(s,a2)$ + $\pi(a3|s) * q_{\pi}(s,a3)$ = $V_{\pi}$(s)  
 
-*Conclusion 1* : $V_{\pi}(s) = \sum_{{a\in A}} \pi(a|s) * q_{\pi}(s,a)$
+*Conclusion 1* : $V_{\pi}(s) = \sum_{{a\in A}} \pi(a|s) * q_{\pi}(s,a)$  
+*Conclusion 2* : $q_{\pi}(s,a) = \sum_{{r,s'}} p(s', r|s, a) [r+r_{V_{\pi}(s')}]$  
+*Conclusion 3* : $V_{\pi}(s) = \sum_{{a\in A}} \pi(a|s) * \sum_{{r,s'}} p(s', r|s, a) [r+r_{V_{\pi}(s')}]$
 
 
 
