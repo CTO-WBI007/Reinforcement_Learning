@@ -52,6 +52,26 @@ $V_{\pi} = E_{\pi} [G_{t}|S_{t} = s]$
 
 # MDP 4 Bellman Expectation Equality  
 
+## **Review: Value Function**:  
+
+As $G_{t}$ only represents one route in the backtracking graph, we need to calculate the weighted average number:  
+
+$V_{\pi} = E_{\pi} [G_{t}|S_{t} = s]$  
+
+*We can get several column vectors according to value function: *  
+
+$q_{\pi}(s,a) = E_{\pi} [G_{t}|S_{t} = s, A_{t} = a]$
+
+*In the above function, q has not restriction towards s; but V has*  
+
+## Relationship & Difference  
+
+$V_{\pi}$(s) ? $q_{\pi}$(s,a)  
+$\pi(a1|s) * q_{\pi}(s,a1)$ + $\pi(a12|s) * q_{\pi}(s,a2)$ + $\pi(a3|s) * q_{\pi}(s,a3)$ = $V_{\pi}$(s)  
+
+
+
+
 
 
 
