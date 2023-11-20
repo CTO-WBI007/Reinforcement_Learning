@@ -1,6 +1,6 @@
-# MDP 1 Background of MDP:
+# MDP 1 Background of MDP
 
-## Several basic definitions:
+## Several basic definitions
 
 (1)Random Variable  
 (2)Stochastic Process  //stochatic: (过程与系统上) 随机的  
@@ -16,13 +16,13 @@
 
 # MDP 2 Dynamic Property of MDP
 
-## Definitions:
+## Definitions
 
 (1)MC : S  
 (2)MRP : S, R  
 (3)MDP : S, A(s), R, P; P has the dynamic property  
 
-## Functions:  
+## Functions  
                         
 *P* : p(s', r | s, a) == $P_{r}{{S_{t+1} = s', R_{t+1} = r|S_{t} = s, A_{t}} = a}$  
 状态转移函数：  
@@ -33,11 +33,11 @@ p(s' | s, a) = $\sum$ p(s', r | s, a)
 
 *When meeting different options and facing different stochastic schemes, how will we make decision?*  
 
-## We use $\pi$ to represent policy:  
+## We use $\pi$ to represent policy  
 确定性策略： a = $\pi$ (s)  
 随机性策略： $\pi$ (a|s) = Pr{At = a|St = s}  
 
-## Reward:  
+## Reward  
 $G_{t}$ = $R_{t+1}$ + $r^{2}R_{t+1}$ + ... + $r^{r-1}R_{r}$  
 ${r\in [0,1]}$
 
@@ -78,16 +78,16 @@ $\pi(a1|s) * q_{\pi}(s,a1)$ + $\pi(a2|s) * q_{\pi}(s,a2)$ + $\pi(a3|s) * q_{\pi}
 
 # MDP 5 Bellman Optimality Equation 
 
-## Review Bellman Expectation Equality:  
+## Review Bellman Expectation Equality  
 *Bellman Expectation Equality* :  
 $V_{\pi}(s) = \sum_{{a\in A}} \pi(a|s) * \sum_{{r,s'}} p(s', r|s, a) [r+\gamma V_{\pi}(s')]$  
 $q_{\pi}(s,a) = \sum_{{r,s'}} p(s', r|s, a) [r+\gamma\sum_{{a'}} \pi(a'|s) * q_{\pi}(s',a')]$  
 
-## Review Value Function:  
+## Review Value Function  
 $V_{\pi}(s) = E_{\pi} [G_{t}|S_{t} = s]$  
 $q_{\pi}(s,a) = E_{\pi} [G_{t}|S_{t} = s, A_{t} = a]$  
 
-## Maximum Value Function: 
+## Maximum Value Function 
 $V_{max}(s) = \max_{\pi}V_{\pi}(s)$  
 $q_{max}(s,a) = \max_{\pi}q_{\pi}(s,a)$  
 
