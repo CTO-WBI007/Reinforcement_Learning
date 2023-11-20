@@ -20,7 +20,11 @@
 
 (1)MC : S  
 (2)MRP : S, R  
-(3)MDP : S, A(s), R  
+(3)MDP : S, A(s), R, P; P has the dynamic property  
+
+## Functions:  
+
+*P* : p(s', r | s, a) == $P_{r}${$S_{t+1}$ = s', $R_{t+1}$ = r | }
 
 
 
