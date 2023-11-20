@@ -1,6 +1,6 @@
-MDP 1 Background of MDP:
+#MDP 1 Background of MDP:
 
-Several basic definitions:
+##Several basic definitions:
 
 (1)Random Variable
 (2)Stochastic Process  //stochatic: (过程与系统上) 随机的
@@ -9,4 +9,4 @@ Several basic definitions:
 (5)Markov Reward Process: Markov Chain + Reward
 (6)Markov Decision Process: Markov Chain + Reward + Action
 
-/*S*/ = state set, /*A*/ action set
+/*S*/ ： state set, /*A*/ ：action set， $$\\forall s \\in S$$, /*A*/(s) $$\\Rightarrow$$ /*A*/t
