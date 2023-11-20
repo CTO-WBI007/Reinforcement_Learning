@@ -91,6 +91,8 @@ $q_{\pi}(s,a) = E_{\pi} [G_{t}|S_{t} = s, A_{t} = a]$
 $V_{max}(s) = \max_{\pi}V_{\pi}(s)$  
 $q_{max}(s,a) = \max_{\pi}q_{\pi}(s,a)$  
 
+*Conclusion* : $V_{max}(s) = \max_{a} q_{max}(s,a)$
+
 
 
 
