@@ -9,4 +9,5 @@
 (5)Markov Reward Process: Markov Chain + Reward
 (6)Markov Decision Process: Markov Chain + Reward + Action
 
-/*S*/ ： state set, /*A*/ ：action set， $$\\forall s \\in S$$, /*A*/(s) $$\\Rightarrow$$ /*A*/t
+*S* ： state set 
+*A* ：action set， $$\\forall s \\in S$$, /*A*/(s) $$\\Rightarrow$$ /*A*/t
