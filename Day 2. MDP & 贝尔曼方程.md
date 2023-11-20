@@ -70,8 +70,14 @@ $V_{\pi}$(s) ? $q_{\pi}$(s,a)
 $\pi(a1|s) * q_{\pi}(s,a1)$ + $\pi(a2|s) * q_{\pi}(s,a2)$ + $\pi(a3|s) * q_{\pi}(s,a3)$ = $V_{\pi}$(s)  
 
 *Conclusion 1* : $V_{\pi}(s) = \sum_{{a\in A}} \pi(a|s) * q_{\pi}(s,a)$  
-*Conclusion 2* : $q_{\pi}(s,a) = \sum_{{r,s'}} p(s', r|s, a) [r+r_{V_{\pi}(s')}]$  
-*Conclusion 3* : $V_{\pi}(s) = \sum_{{a\in A}} \pi(a|s) * \sum_{{r,s'}} p(s', r|s, a) [r+r_{V_{\pi}(s')}]$
+*Conclusion 2* : $q_{\pi}(s,a) = \sum_{{r,s'}} p(s', r|s, a) [r+\gamma V_{\pi}(s')]$  
+*Conclusion 3* : $V_{\pi}(s) = \sum_{{a\in A}} \pi(a|s) * \sum_{{r,s'}} p(s', r|s, a) [r+\gamma V_{\pi}(s')]$  
+*Conclusion 4* : $q_{\pi}(s,a) = \sum_{{r,s'}} p(s', r|s, a) [r+\gamma\sum_{{a'}} \pi(a'|s) * q_{\pi}(s',a')]$
+
+*Conclusion 3,4 are what we called Bellman Expectation Equation*  
+
+
+
 
 
 
