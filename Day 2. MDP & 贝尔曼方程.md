@@ -4,7 +4,7 @@
 
 (1)Random Variable  
 (2)Stochastic Process  //stochatic: (过程与系统上) 随机的  
-(3)Markov Chain/Process:具有Markov Property的随机过程  P（St+1 | St, St-1, ..., S1) = P(St+1 | St)是Markov Property的描述  
+(3)Markov Chain/Process:具有Markov Property的随机过程  P（St+1 | St, St-1, ..., S1) = P(St+1 | St)是Markov Property的描述   
 (4)State Space Model：（HMM, Kalman Filter, Particle Filter）Markov Chain  
 (5)Markov Reward Process: Markov Chain + Reward  
 (6)Markov Decision Process: Markov Chain + Reward + Action  
@@ -23,8 +23,8 @@
 (3)MDP : S, A(s), R, P; P has the dynamic property  
 
 ## Functions:  
-
-*P* : p(s', r | s, a) == Pr{St+1 = s', Rt+1 = r | St = s, At = a}  
+                        
+*P* : p(s', r | s, a) == $P_{r}{{S_{t+1} = s', R_{t+1} = r|S_{t} = s, A_{t}} = a}$  
 状态转移函数：  
 p(s' | s, a) = $\sum$ p(s', r | s, a)  
 
@@ -58,18 +58,18 @@ As $G_{t}$ only represents one route in the backtracking graph, we need to calcu
 
 $V_{\pi} = E_{\pi} [G_{t}|S_{t} = s]$  
 
-*We can get several column vectors according to value function: *  
+*We can get several column vectors according to value function*  
 
 $q_{\pi}(s,a) = E_{\pi} [G_{t}|S_{t} = s, A_{t} = a]$
 
-*In the above function, q has not restriction towards s; but V has*  
+*In the above function, q has not restriction towards s, but V has that*  
 
 ## Relationship & Difference  
 
 $V_{\pi}$(s) ? $q_{\pi}$(s,a)  
 $\pi(a1|s) * q_{\pi}(s,a1)$ + $\pi(a2|s) * q_{\pi}(s,a2)$ + $\pi(a3|s) * q_{\pi}(s,a3)$ = $V_{\pi}$(s)  
 
-*Conclusion* : $V_{\pi}(s) = \sum_{{a\in A}} \pi(a|s) * q_{\pi}(s,a)$
+*Conclusion 1* : $V_{\pi}(s) = \sum_{{a\in A}} \pi(a|s) * q_{\pi}(s,a)$
 
 
 
