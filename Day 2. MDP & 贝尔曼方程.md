@@ -45,7 +45,7 @@ ${r\in [0,1]}$
 
 As $G_{t}$ only represents one route in the backtracking graph, we need to calculate the weighted average number:  
 
-$V_{\pi} = E_{\pi} [G_{t}|S_{t} = s]$  
+$V_{\pi}(s) = E_{\pi} [G_{t}|S_{t} = s]$  
 
 *We will use backtracking graph to calculate value function*  
 
@@ -56,7 +56,7 @@ $V_{\pi} = E_{\pi} [G_{t}|S_{t} = s]$
 
 As $G_{t}$ only represents one route in the backtracking graph, we need to calculate the weighted average number:  
 
-$V_{\pi} = E_{\pi} [G_{t}|S_{t} = s]$  
+$V_{\pi}(s) = E_{\pi} [G_{t}|S_{t} = s]$  
 
 *We can get several column vectors according to value function*  
 
@@ -75,6 +75,29 @@ $\pi(a1|s) * q_{\pi}(s,a1)$ + $\pi(a2|s) * q_{\pi}(s,a2)$ + $\pi(a3|s) * q_{\pi}
 *Conclusion 4* : $q_{\pi}(s,a) = \sum_{{r,s'}} p(s', r|s, a) [r+\gamma\sum_{{a'}} \pi(a'|s) * q_{\pi}(s',a')]$
 
 *Conclusion 3,4 are what we called Bellman Expectation Equation*  
+
+# MDP 5 Bellman Optimality Equation 
+
+## Review Bellman Expectation Equality:  
+*Bellman Expectation Equality* :  
+$V_{\pi}(s) = \sum_{{a\in A}} \pi(a|s) * \sum_{{r,s'}} p(s', r|s, a) [r+\gamma V_{\pi}(s')]$  
+$q_{\pi}(s,a) = \sum_{{r,s'}} p(s', r|s, a) [r+\gamma\sum_{{a'}} \pi(a'|s) * q_{\pi}(s',a')]$  
+
+## Review Value Function:  
+$V_{\pi}(s) = E_{\pi} [G_{t}|S_{t} = s]$  
+$q_{\pi}(s,a) = E_{\pi} [G_{t}|S_{t} = s, A_{t} = a]$  
+
+## Maximum Value Function: 
+$V_{max}(s) = \max_{\pi}V_{\pi}(s)$  
+$q_{max}(s,a) = \max_{\pi}q_{\pi}(s,a)$  
+
+
+
+
+
+
+
+
 
 
 
