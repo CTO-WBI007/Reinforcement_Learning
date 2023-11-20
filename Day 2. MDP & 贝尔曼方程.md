@@ -43,9 +43,15 @@ ${r\in [0,1]}$
 
 ## **Value Function**:  
 
+As $G_{t}$ only represents one route in the backtracking graph, we need to calculate the weighted average number:  
+
 $V_{\pi} = E_{\pi} [G_{t}|S_{t} = s]$  
 
-*We will use backtracking graph to calculate value function*  
+*We will use backtracking graph to calculate value function.*  
+
+
+# MDP 4 Bellman Expectation Equality  
+
 
 
 
