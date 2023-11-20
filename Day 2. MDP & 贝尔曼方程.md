@@ -10,5 +10,5 @@
 (6)Markov Decision Process: Markov Chain + Reward + Action  
 
 *S* ： state set   
-*A* ：action set， $$\\forall s \\in S,  
+*A* ：action set， $$\\forall s \\in S   
 A(s) $$\\Rightarrow$$ At
