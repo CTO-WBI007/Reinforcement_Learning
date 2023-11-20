@@ -1,6 +1,6 @@
-#MDP 1 Background of MDP:
+# MDP 1 Background of MDP:
 
-##Several basic definitions:
+## Several basic definitions:
 
 (1)Random Variable
 (2)Stochastic Process  //stochatic: (过程与系统上) 随机的  
