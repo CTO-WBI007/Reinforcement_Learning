@@ -29,5 +29,22 @@
 p(s' | s, a) = $\sum$ p(s', r | s, a)  
 
 
+# MDP 3 Value Function
+
+*When meeting different options and facing different stochastic schemes, how will we make decision?*  
+
+## We use $\pi$ to represent policy:  
+确定性策略： a = $\pi$ (s)  
+随机性策略： $\pi$ (a|s) = Pr{At = a|St = s}  
+
+## Reward:  
+$G_{t}$ = $R_{t+1}$ + $r^{2}R_{t+1}$ + ... + $r^{r-1}R_{r}$  
+${r\in [0,1]}$  
+
+
+
+
+
+
 
 
