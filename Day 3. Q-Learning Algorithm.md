@@ -44,7 +44,12 @@ We call it **TD target** $y_{t}$
 ## Summary 
 **Goal**: Learn the optimal action-value function $Q_{max}$.  
 **Tabular Version**: directly learning $Q_{max}$.  
+1) There are finite states and actions
+2) Draw a table, and update the table by Q-learning
 **DQN Version**: function approximation
+1) Approximate $Q_{max}$ by the DQN, Q(s,a;w)
+2) Update the parameter, w, by Q-learning.
+   
 
 
    
