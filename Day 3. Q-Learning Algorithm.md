@@ -24,6 +24,11 @@ We call it **TD target** $y_{t}$
 ## Q-Learning: Tabular Version  
 *We will use TD target to study maximum value function*  
 
+1) Observe a transition with 4 elements ($s_{t}, a_{t}, r_{t}, s_{t+1}$).
+2) TD target: $y_{t} = r_{t} + \gamma max_{a}Q_{max}(s_{t+1},a)$.
+3) TD error: $\vartheta_{t} = Q_{max}(s_{t},a_{t}) - y_{t}$.
+4) 
+
 
 
 
