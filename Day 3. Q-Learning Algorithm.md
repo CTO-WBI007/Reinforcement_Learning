@@ -27,7 +27,29 @@ We call it **TD target** $y_{t}$
 1) Observe a transition with 4 elements ($s_{t}, a_{t}, r_{t}, s_{t+1}$).
 2) TD target: $y_{t} = r_{t} + \gamma max_{a}Q_{max}(s_{t+1},a)$.
 3) TD error: $\vartheta_{t} = Q_{max}(s_{t},a_{t}) - y_{t}$.
-4) 
+4) Update: $Q_{max}(s_{t},a_{t})\longleftarrow Q_{max}(s_{t},a_{t}) - a*\vartheta_{t}$.
+
+## Q-Learning: DQN Version
+
+### Intro
+1) Approximate $Q_{max}(s,a)$ by DQN, Q(s,a;w).
+2) DQN controls the agent by: $a_{t} = argmax_{a} Q(s_{t},a;w)$.
+3) We seek to learn the parameter, w.
+### Algorithm
+1) Observe a transition with 4 elements ($s_{t}, a_{t}, r_{t}, s_{t+1}$).
+2) TD target: $y_{t} = r_{t} + \gamma max_{a}Q_{max}(s_{t+1},a;w)$.
+3) TD error: $\vartheta_{t} = Q_{max}(s_{t},a_{t};w) - y_{t}$.
+4) Update: $w\longleftarrow w - a*\vartheta_{t}*\frac{\partial Q(s_{t},a_{t};w)}{\partial w}$.
+
+## Summary 
+**Goal**: Learn the optimal action-value function $Q_{max}$.  
+**Tabular Version**: directly learning $Q_{max}$.  
+**DQN Version**: function approximation
+
+
+   
+
+
 
 
 
